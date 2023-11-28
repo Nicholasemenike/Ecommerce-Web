@@ -13,15 +13,17 @@ const Popup = () => {
 
 const TopNav = () => {
   return (
-    <nav className="bg-black p-4">
+    <nav className="bg-black p-4 fixed w-full">
                 <i className='fa fa-bars absolute md:hidden sm:block text-white'></i>
 
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-xl"><img src='/download.png' height={50} width={50}/></div>
+        <div className="text-white font-bold text-xl"><img src='/download.png' height={50} width={50} className=''/></div>
+
+        <h3 className='text-white lg:font-medium lg:text-lg'>NKY Market</h3>
         
         <div className='flex space-x-1'>
             <input type="text" className='rounded-sm p-1'/>
-            <button className='bg-rgb(0, 136, 169, .1) text-white p-2 rounded-sm'>Search</button>
+            <button className='bg-[#0090ff] text-white p-2 rounded-sm hover:opacity-90'>Search</button>
         </div>
 
         <ul className="flex space-x-5">
