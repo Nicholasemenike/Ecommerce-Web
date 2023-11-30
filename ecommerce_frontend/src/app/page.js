@@ -1,10 +1,17 @@
+import BottomNav from "@/Component/bars/BottomNav";
+
+export const metadata={
+  title: 'Home'
+}
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        
-      </div>
+    <main className="min-h-screen">
+      <footer className="top-full">
+      <section className="bottom-full">
+        <BottomNav/>
+      </section>
+      </footer>
     </main>
   )
 }
